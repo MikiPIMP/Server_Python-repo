@@ -3,7 +3,7 @@ import socket
 import subprocess
 import os
 
-host = "192.168.0.16"
+host = socket.gethostname()      # Ovo promeniti pre startanja kod-a
 port = 19304
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
