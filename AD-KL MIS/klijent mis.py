@@ -8,7 +8,7 @@ import pickle
 print("Program za daljinsko upravljanje [Klijent]: ")
 print("-" * 60)
 
-host = "192.168.0.16"
+host = socket.gethostname()         #ovo Promeniti pre nego sto se starta skripta
 port = 11110
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
